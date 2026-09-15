@@ -9,9 +9,9 @@
 
 ## Team Members
 
-- _ Fahad Saad
-- _ Khalid Aref
-- **Coach:** _ Mr.Khairey Nouhe
+-  Fahad Saad
+-  Khalid Aref
+- **Coach:** Mr.Khairey Nouhe
 
 This repository documents our full engineering process for the WRO 2026 Future Engineers challenge: design decisions, components, wiring, power management, obstacle strategy, and the source code of our autonomous vehicle.
 
