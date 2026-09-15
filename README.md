@@ -3,7 +3,7 @@
 <!-- TODO: Replace with your team photo -->
 <!-- <img src="./t-photos/team_photo.jpg" alt="Team Photo" width="600"> -->
 
-**Team Name:** Cyper X
+**Team Name:** Cyber X
 
 **Country:** Saudi Arabia
 
