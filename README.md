@@ -3,16 +3,15 @@
 <!-- TODO: Replace with your team photo -->
 <!-- <img src="./t-photos/team_photo.jpg" alt="Team Photo" width="600"> -->
 
-**Team Name:** _TODO: your team name_
+**Team Name:** Cyper X
 
-**Country:** _TODO: your country_
+**Country:** Saudi Arabia
 
 ## Team Members
 
-- _TODO: Member 1_
-- _TODO: Member 2_
-- _TODO: Member 3 (optional)_
-- **Coach:** _TODO: coach name_
+- _TODO: Fahad Saad
+- _TODO: Khalid Aref
+- **Coach:** _TODO: Mr.Khairey Nouhe
 
 This repository documents our full engineering process for the WRO 2026 Future Engineers challenge: design decisions, components, wiring, power management, obstacle strategy, and the source code of our autonomous vehicle.
 
