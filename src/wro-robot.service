@@ -1,0 +1,15 @@
+[Unit]
+Description=WRO Future Engineers autonomy driver -- mode decided by hardware switch
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/fahad/WRO_Competition/final_code_for_raspberry
+Environment=DISPLAY=:0
+ExecStart=/home/fahad/WRO_Competition/final_code_for_raspberry/.venv/bin/python3 /home/fahad/WRO_Competition/final_code_for_raspberry/autonomy_driver_reconnect.py
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
