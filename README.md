@@ -72,14 +72,14 @@ _TODO: Add a link to your YouTube performance video (at least 30 seconds of driv
 
 ### 2.1 Drive System
 
-**Motor: TT DC Gear Motor**
+**Motor:DC Gear Motor**
 
 Specifications (typical):
 
-- Operating voltage: 3–6 V
+- Operating voltage: 6-12 V
 - Gear ratio: 1:48
-- No-load speed: ~200 RPM at 6 V
-- Shaft: double-sided, compatible with standard TT wheels
+- No-load speed: ~200 RPM at 6-12 V
+- Shaft: double-sided, compatible with wheels
 
 **Motor Driver: L298N**
 
@@ -127,7 +127,7 @@ _TODO: Describe how the servo connects to the steering linkage._
 
 ### 2.3 Chassis Design
 
-_TODO: Describe your chassis — material (3D printed? acrylic? kit?), dimensions (width × length × height), component layout, and why you arranged it that way. Add photos or CAD renders. If you have 3D-printed parts, put the model files in the `models` folder._
+chassis material 3D printed, dimensions (25cm × 20cm × 10cm)
 
 <p align="right"><a href="#top">Back To Top</a></p>
 
@@ -138,12 +138,12 @@ _TODO: Describe your chassis — material (3D printed? acrylic? kit?), dimension
 **Battery: 18650 Lithium-ion cells**
 
 - Nominal voltage: 3.7 V per cell
-- Configuration: _TODO: e.g., 2S (7.4 V) or 3S (11.1 V)_
-- Capacity: _TODO: mAh_
+- Configuration: 3S (11.1 V)
+- Capacity:10800mAh
 
 **Voltage Regulation: LM2596 DC-DC Step-Down Module**
 
-The LM2596 buck converter steps the battery voltage down to a stable **5 V** for the Raspberry Pi 5 and the sensors, while the L298N receives battery voltage directly for the drive motor.
+The LM2596 buck converter steps the battery voltage down to a stable **5 V** for the Raspberry Pi 5, while the L298N receives battery voltage directly for the drive motor.
 
 _TODO: Describe your exact power distribution — which rail feeds the Pi, the servo, the LiDAR, and the motor driver — and any switches or protection you added. Note: the Raspberry Pi 5 prefers 5 V / 5 A; verify your LM2596 can supply enough current under load._
 
