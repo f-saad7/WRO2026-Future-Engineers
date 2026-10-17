@@ -87,16 +87,12 @@ Specifications (typical):
 
 **Reason for selection:**
 
-- _TODO: Explain why you chose the TT motor (e.g., lightweight, cheap, easy to mount, sufficient torque for the flat WRO field)._
-- _TODO: Explain the drive configuration (rear-wheel drive? differential gear? direct drive on one axle?)._
+- The gear motor was chosen because it is lightweight, cost-effective, easy to mount, and provides sufficient torque and speed control for the flat WRO field
+- The drive configuration utilizes a rear-wheel drive setup with direct drive on the axle, providing reliable traction and straightforward mechanical assembly.
 
 **Mounting:**
 
-_TODO: Describe how the motor is mounted to the chassis and how the wheels are attached._
-
-**Potential improvements:**
-
-_TODO: e.g., upgrade to a motor with an encoder for closed-loop speed control, or replace the L298N (which has a high voltage drop) with a more efficient TB6612FNG driver._
+- With Glue
 
 ### 2.2 Steering
 
@@ -107,7 +103,7 @@ Specifications:
 - Torque: 2.2 kg·cm (4.8 V)
 - Speed: 0.1 s / 60°
 - Metal gears
-- Operating voltage: 4.8–6 V
+- Operating voltage: 5V
 
 **Reason for selection:**
 
@@ -117,11 +113,10 @@ Specifications:
 
 **Steering geometry:**
 
-_TODO: Describe your steering mechanism (simple pivot? Ackermann geometry?) and how you calibrated the center position and maximum steering angles._
-
+The vehicle uses a modified Ackermann steering geometry to allow smooth turning. The center position is calibrated at a 90° PWM signal sent from the Raspberry Pi, ensuring the wheels align perfectly straight. Maximum steering angles are hardware-constrained and software-limited to ±40° relative to the center to prevent mechanical binding and linkage strain.
 **Mounting:**
 
-_TODO: Describe how the servo connects to the steering linkage._
+The servo motor is securely mounted to the front chassis frame. Its horn connects directly to a central tie-rod linkage, which connects to the steering knuckles via pivot pins to convert the rotational motion of the servo into linear steering motion.  
 
 ### 2.3 Chassis Design
 
@@ -135,7 +130,7 @@ chassis material 3D printed, dimensions (25cm × 20cm × 10cm)
 
 **Battery: 18650 Lithium-ion cells**
 
-- Nominal voltage: 3.7 V per cell
+- Nominal voltage: 3.7 V,3600mAh per cell
 - Configuration: 3S (11.1 V)
 - Capacity:10800mAh
 
@@ -143,7 +138,7 @@ chassis material 3D printed, dimensions (25cm × 20cm × 10cm)
 
 The LM2596 buck converter steps the battery voltage down to a stable **5 V** for the Raspberry Pi 5, while the L298N receives battery voltage directly for the drive motor.
 
-_TODO: Describe your exact power distribution — which rail feeds the Pi, the servo, the LiDAR, and the motor driver — and any switches or protection you added. Note: the Raspberry Pi 5 prefers 5 V / 5 A; verify your LM2596 can supply enough current under load._
+The 11.1V battery powers the LM2596 buck converter 5V 5A for the raspberry, which steps it down to 5V to power the Arduino Nano, LiDAR, camera, ToF sensor, MPU-9250, and servo.
 
 ### 3.2 Sensors
 
@@ -154,8 +149,6 @@ _TODO: Describe your exact power distribution — which rail feeds the Pi, the s
 | **GY-530 VL53L0X (ToF)** | Close-range distance measurement (e.g., parking, wall proximity) |
 | **TCA9548A I2C Multiplexer** | Connecting multiple VL53L0X sensors (which share a fixed I2C address) to one I2C bus |
 | **MPU-9250 IMU** | Gyro/accelerometer/magnetometer for heading control and precise turns |
-
-_TODO: For each sensor, describe where it is mounted and how it is used in your algorithm._
 
 ### 3.3 Processing Unit
 
