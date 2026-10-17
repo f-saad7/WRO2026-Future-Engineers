@@ -46,9 +46,7 @@ This repository documents our full engineering process for the WRO 2026 Future E
 
 This project focuses on designing, building, and programming an autonomous vehicle capable of completing the WRO Future Engineers challenges: the Open Challenge (laps around the field), the Obstacle Challenge (navigating around red and green traffic signs), and parallel parking.
 
-Our vehicle is built around a **Raspberry Pi 5 (4 GB)** as the main computer. It combines a **D500 360° LiDAR** for wall detection and localization, an **Innomaker USB camera** for traffic-sign color detection, **VL53L0X time-of-flight sensors** for close-range distance measurement, and an **MPU-9250 IMU** for heading control. A **TT DC gear motor** driven by an **L298N motor driver** provides propulsion, while an **MG90S servo** steers the front wheels.
-
-_TODO: Add a short paragraph about your team's goals, design philosophy, and development process (brainstorming → prototyping → testing → iterating)._
+Our vehicle is built around a **Raspberry Pi 5 (4 GB)** as the main computer.And Arduino Nano as muscle for the sensors, It combines a **D500 360° LiDAR** for wall detection and localization, an **Innomaker USB camera** for traffic-sign color detection, **VL53L0X time-of-flight sensors** for close-range distance measurement, and an **MPU-9250 IMU** for heading control. A ** gear motor** driven by an **L298N motor driver** provides propulsion, while an **MG90S servo** steers the front wheels.
 
 ### 1.2 Robot Images
 
