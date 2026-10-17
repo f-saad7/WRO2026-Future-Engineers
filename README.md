@@ -113,10 +113,11 @@ Specifications:
 
 **Steering geometry:**
 
-The vehicle uses a modified Ackermann steering geometry to allow smooth turning. The center position is calibrated at a 90° PWM signal sent from the Raspberry Pi, ensuring the wheels align perfectly straight. Maximum steering angles are hardware-constrained and software-limited to ±40° relative to the center to prevent mechanical binding and linkage strain.
+- The vehicle uses a modified Ackermann steering geometry to allow smooth turning. The center position is calibrated at a 90° PWM signal sent from the Raspberry Pi, ensuring the wheels align perfectly straight. Maximum steering angles are hardware-constrained and software-limited to ±40° relative to the center to prevent mechanical binding and linkage strain.
+
 **Mounting:**
 
-The servo motor is securely mounted to the front chassis frame. Its horn connects directly to a central tie-rod linkage, which connects to the steering knuckles via pivot pins to convert the rotational motion of the servo into linear steering motion.  
+- The servo motor is securely mounted to the front chassis frame. Its horn connects directly to a central tie-rod linkage, which connects to the steering knuckles via pivot pins to convert the rotational motion of the servo into linear steering motion.  
 
 ### 2.3 Chassis Design
 
